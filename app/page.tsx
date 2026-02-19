@@ -4,6 +4,7 @@ import ProfileSection from '@/components/ProfileSection'
 import SocialLinks from '@/components/SocialLinks'
 import HeroHeadline from '@/components/HeroHeadline'
 import CardStack from '@/components/CardStack'
+import AppStack from '@/components/AppStack'
 import ScrollReveal from '@/components/ScrollReveal'
 import SmoothCursor from '@/components/SmoothCursor'
 import FloatingElements from '@/components/FloatingElements'
@@ -67,6 +68,13 @@ export default function Home() {
           <ScrollReveal delay={0.4}>
             <div className="mb-16">
               <CardStack />
+            </div>
+          </ScrollReveal>
+
+          {/* Apps Stack */}
+          <ScrollReveal delay={0.45}>
+            <div className="mb-16">
+              <AppStack />
             </div>
           </ScrollReveal>
 

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import GlassCard from './GlassCard'
 
 const cards = [
-  // Projects with logos (top)
+  // Projects with uploaded logos (top priority)
   {
     id: 'ragspro',
     logo: '/images/logos/ragspro.jpg',
@@ -35,64 +35,78 @@ const cards = [
   },
   {
     id: 'maid-agency',
-    logo: '/images/logos/MaidAgency.png',
+    logo: '/images/logos/ MaidAgency.png',
     title: 'Maid Agency',
     subtitle: 'Maid Agency Management System - Modern web application for agency management.',
     href: 'https://maid-agency.vercel.app',
   },
-  // Projects without logos
   {
-    id: 'glow',
-    logo: '/images/logos/glow.png',
-    title: 'Glow',
-    subtitle: 'Modern web application with stunning UI/UX design and advanced animations.',
-    href: 'https://glow.ragspro.com',
+    id: 'gymflow-website',
+    logo: '/images/logos/gymflow-website.png',
+    title: 'GymFlow Website',
+    subtitle: 'Modern fitness and gym management website with booking and membership features.',
+    href: 'https://gymflow-website.vercel.app',
   },
   {
-    id: 'ragsai',
-    logo: '/images/logos/ragsai.png',
-    title: 'RAGS-AI',
-    subtitle: 'Jarvis-style AI assistant with voice recognition and Mac integration.',
+    id: 'rags-ai-website',
+    logo: '/images/logos/rags-ai-website.jpg',
+    title: 'RAGS AI Website',
+    subtitle: 'Official website for RAGS AI assistant showcasing features and capabilities.',
     href: 'https://rags-ai-website.vercel.app',
   },
   {
-    id: 'lead-genrater',
-    logo: '/images/logos/lead-genrater.png',
-    title: 'Lead Generator',
-    subtitle: 'Premium Lead Generation Bot - Fully automatic lead generation & outreach system for international clients.',
-    href: 'https://leads.ragspro.com',
-  },
-  {
-    id: 'tennis',
-    logo: '/images/logos/tennis.png',
+    id: 'tennis-website',
+    logo: '/images/logos/tennis-website.png',
     title: 'Tennis',
     subtitle: 'Tennis platform with booking and management features.',
     href: 'https://tennis-zeta-eight.vercel.app',
   },
   {
+    id: 'lead-genrater',
+    logo: '/images/logos/leads.png',
+    title: 'Lead Generator',
+    subtitle: 'Premium Lead Generation Bot - Fully automatic lead generation & outreach system for international clients.',
+    href: 'https://leads.ragspro.com',
+  },
+  {
     id: 'subtitle',
-    logo: '/images/logos/subtitle.png',
+    logo: '/images/logos/subtital.png',
     title: 'Subtitle',
     subtitle: 'Subtitle generation and editing tool for video content.',
     href: 'https://subtitle-rho.vercel.app',
   },
   {
+    id: 'api-key',
+    logo: '/images/logos/ragspro.jpg',
+    title: 'API Key Manager',
+    subtitle: 'Secure API key management system for developers and teams.',
+    href: 'https://api-key.vercel.app',
+  },
+  // Projects without logos - using ragspro logo as placeholder
+  {
+    id: 'glow',
+    logo: '/images/logos/ragspro.jpg',
+    title: 'Glow',
+    subtitle: 'Modern web application with stunning UI/UX design and advanced animations.',
+    href: 'https://glow.ragspro.com',
+  },
+  {
     id: 'main-project',
-    logo: '/images/logos/main-project.png',
+    logo: '/images/logos/ragspro.jpg',
     title: 'Main Project',
     subtitle: 'Feature-rich web application with modern tech stack.',
     href: 'https://main-chi-virid.vercel.app',
   },
   {
     id: 'restaurant',
-    logo: '/images/logos/restaurant.png',
+    logo: '/images/logos/ragspro.jpg',
     title: 'Restaurant',
     subtitle: 'Beautiful restaurant website with menu and reservation system.',
     href: 'https://v0-restaurant-website-design-nu-lake.vercel.app',
   },
   {
     id: 'sapd',
-    logo: '/images/logos/sapd.png',
+    logo: '/images/logos/ragspro.jpg',
     title: 'SAPD',
     subtitle: 'Professional web application with clean design.',
     href: 'https://sapd-eight.vercel.app',

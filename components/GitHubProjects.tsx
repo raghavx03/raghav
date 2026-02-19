@@ -35,7 +35,7 @@ const githubRepos = [
     stars: 1,
     repoUrl: 'https://github.com/raghavshahhh/lead-genrater',
     liveUrl: null,
-    image: null,
+    image: '/images/logos/leads.png',
   },
   {
     id: 'ragspro',
@@ -45,7 +45,7 @@ const githubRepos = [
     stars: 2,
     repoUrl: 'https://github.com/raghavshahhh/RAGSPRO',
     liveUrl: 'https://ragspro.com',
-    image: null,
+    image: '/images/logos/ragspro.jpg',
   },
   {
     id: 'rags-ai',
@@ -55,7 +55,7 @@ const githubRepos = [
     stars: 1,
     repoUrl: 'https://github.com/raghavshahhh/RAGS-AI',
     liveUrl: null,
-    image: null,
+    image: '/images/logos/rags-ai-website.jpg',
   },
   {
     id: 'maid-agency',
@@ -65,7 +65,7 @@ const githubRepos = [
     stars: 1,
     repoUrl: 'https://github.com/raghavshahhh/maid-agency',
     liveUrl: null,
-    image: null,
+    image: '/images/logos/ MaidAgency.png',
   },
   {
     id: 'glow',
@@ -75,7 +75,7 @@ const githubRepos = [
     stars: 1,
     repoUrl: 'https://github.com/raghavshahhh/glow',
     liveUrl: 'https://glow.ragspro.com',
-    image: null,
+    image: '/images/logos/ragspro.jpg',
   },
 ]
 

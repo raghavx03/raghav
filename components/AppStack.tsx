@@ -9,14 +9,21 @@ const apps = [
     logo: '/images/logos/lawai.png',
     title: 'LawAI v2',
     subtitle: 'Advanced legal automation app with enhanced features and AI capabilities.',
-    href: 'https://lawaiv2.vercel.app',
+    href: 'https://lawaiv2.ragspro.com',
   },
   {
     id: 'gym-flow',
     logo: '/images/logos/gymflow-website.png',
     title: 'Gym Flow',
     subtitle: 'Fitness tracking and gym management mobile application.',
-    href: 'https://gym-flow.vercel.app',
+    href: 'https://gymflow.ragspro.com',
+  },
+  {
+    id: 'api',
+    logo: '/images/logos/ragspro.jpg',
+    title: 'API',
+    subtitle: 'RAGSPRO API - Backend services and automation endpoints.',
+    href: 'https://api.ragspro.com',
   },
 ]
 

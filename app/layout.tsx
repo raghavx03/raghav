@@ -17,7 +17,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Raghav Shah (Bhupender Pratap) - AI Product Builder & RAGSPRO Founder',
+  title: 'RAGHAV SHAH (BHUPENDER PRATAP) - AI PRODUCT BUILDER & RAGSPRO FOUNDER',
   description: 'Raghav Shah, also known as Bhupender Pratap, is an AI product builder and founder of RAGSPRO. Building intelligent automation solutions, SaaS platforms, and AI-powered applications. Full-stack developer specializing in Next.js, React, Python, and AI integration.',
   keywords: [
     'Raghav Shah',
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://raghav.ragspro.com',
-    title: 'Raghav Shah (Bhupender Pratap) - AI Product Builder & RAGSPRO Founder',
+    title: 'RAGHAV SHAH (BHUPENDER PRATAP) - AI PRODUCT BUILDER & RAGSPRO FOUNDER',
     description: 'Building intelligent AI products, automation solutions, and SaaS platforms. Founder of RAGSPRO, LawAI, and RAGS AI.',
     siteName: 'Raghav Shah Portfolio',
     images: [{
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Raghav Shah - AI Product Builder & RAGSPRO Founder',
+    title: 'RAGHAV SHAH - AI PRODUCT BUILDER & RAGSPRO FOUNDER',
     description: 'Building intelligent AI products and automation solutions.',
     creator: '@raghavshahhh',
     images: ['/images/raghavimage.PNG'],
@@ -81,6 +81,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/images/raghavimage.PNG" />
+      </head>
       <body className={inter.className}>
         {children}
       </body>

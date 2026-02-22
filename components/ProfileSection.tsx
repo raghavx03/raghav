@@ -42,7 +42,7 @@ export default function ProfileSection({ name, profileImage }: ProfileSectionPro
             alt="Profile photo"
             fill
             priority
-            className="rounded-full object-cover ring-2 ring-white/10"
+            className="rounded-full object-cover object-top ring-2 ring-white/10"
             sizes="(max-width: 768px) 120px, 150px"
           />
           {/* Glow effect on hover */}

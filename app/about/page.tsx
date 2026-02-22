@@ -7,8 +7,75 @@ import ScrollReveal from '@/components/ScrollReveal'
 import SmoothCursor from '@/components/SmoothCursor'
 import FloatingElements from '@/components/FloatingElements'
 import MagneticButton from '@/components/MagneticButton'
+import { useEffect } from 'react'
 
 export default function AboutPage() {
+  useEffect(() => {
+    // Add JSON-LD structured data for About page
+    const structuredData = {
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      name: 'Raghav Shah',
+      alternateName: ['Bhupender Pratap', 'RAGSPRO'],
+      url: 'https://raghav.ragspro.com',
+      image: 'https://raghav.ragspro.com/images/raghavimage.PNG',
+      description: 'AI Product Builder, Full-Stack Developer, and Founder of RAGSPRO. Building intelligent automation solutions and SaaS platforms.',
+      jobTitle: 'Founder & AI Product Builder',
+      email: 'bhupenderpratap6@gmail.com',
+      telephone: '+91-8700048490',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'New Delhi',
+        addressCountry: 'India',
+      },
+      sameAs: [
+        'https://github.com/raghavshahhh',
+        'https://www.linkedin.com/in/raghavshahhh/',
+        'https://youtube.com/@raghavshahh',
+        'https://instagram.com/raghavshahhh',
+      ],
+      worksFor: {
+        '@type': 'Organization',
+        name: 'RAGSPRO',
+        url: 'https://ragspro.com',
+      },
+      knowsAbout: [
+        'AI Development',
+        'Full-Stack Development',
+        'Next.js',
+        'React',
+        'Python',
+        'SaaS Development',
+        'Automation',
+        'Machine Learning',
+        'Voice AI',
+        'iOS Development',
+        'Legal Automation',
+        'Lead Generation',
+      ],
+      hasCredential: [
+        {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'BCA',
+          issuingOrganization: 'Maharshi Dayanand University, Rohtak',
+        },
+        {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'ITI (COPA)',
+          issuingOrganization: 'Govt. ITI Jaffarpur, Delhi',
+        },
+      ],
+    }
+
+    const script = document.createElement('script')
+    script.type = 'application/ld+json'
+    script.textContent = JSON.stringify(structuredData)
+    document.head.appendChild(script)
+
+    return () => {
+      document.head.removeChild(script)
+    }
+  }, [])
   return (
     <main className="relative min-h-screen text-white overflow-hidden bg-black">
       <FloatingElements />

@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://raghav.ragspro.com/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# ChatGPT/OpenAI
+User-agent: GPTBot
+Allow: /
+
+# Claude/Anthropic
+User-agent: Claude-Web
+Allow: /

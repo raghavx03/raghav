@@ -9,6 +9,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 import SmoothCursor from '@/components/SmoothCursor'
 import FloatingElements from '@/components/FloatingElements'
 import GitHubProjects from '@/components/GitHubProjects'
+import { useEffect } from 'react'
 
 // Portfolio data
 const portfolioData = {
@@ -25,6 +26,53 @@ const portfolioData = {
 }
 
 export default function Home() {
+  useEffect(() => {
+    // Add JSON-LD structured data for better SEO
+    const structuredData = {
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      name: 'Raghav Shah',
+      alternateName: 'Bhupender Pratap',
+      url: 'https://raghav.ragspro.com',
+      image: 'https://raghav.ragspro.com/images/raghavimage.PNG',
+      description: 'AI Product Builder, Full-Stack Developer, and Founder of RAGSPRO',
+      jobTitle: 'Founder & AI Product Builder',
+      email: 'bhupenderpratap6@gmail.com',
+      sameAs: [
+        'https://github.com/raghavshahhh',
+        'https://www.linkedin.com/in/raghavshahhh/',
+        'https://youtube.com/@raghavshahh',
+        'https://instagram.com/raghavshahhh',
+      ],
+      worksFor: {
+        '@type': 'Organization',
+        name: 'RAGSPRO',
+        url: 'https://ragspro.com',
+      },
+      knowsAbout: [
+        'AI Development',
+        'Full-Stack Development',
+        'Next.js',
+        'React',
+        'Python',
+        'SaaS Development',
+        'Automation',
+        'Machine Learning',
+        'Voice AI',
+        'iOS Development',
+      ],
+    }
+
+    const script = document.createElement('script')
+    script.type = 'application/ld+json'
+    script.textContent = JSON.stringify(structuredData)
+    document.head.appendChild(script)
+
+    return () => {
+      document.head.removeChild(script)
+    }
+  }, [])
+
   return (
     <main className="relative min-h-screen text-white overflow-hidden bg-black">
       {/* Floating Background Elements */}

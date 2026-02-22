@@ -17,30 +17,60 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Raghav Shah - AI Product Builder & Founder',
-  description: 'Founder of RAGSPRO. Building intelligent AI products and automation solutions. Full-stack developer specializing in Next.js, React, Python, and AI integration.',
-  keywords: ['AI Developer', 'Full-Stack Developer', 'Next.js', 'React', 'Python', 'AI Automation', 'Raghav Shah', 'Bhupender Pratap'],
-  authors: [{ name: 'Raghav Shah' }],
+  title: 'Raghav Shah (Bhupender Pratap) - AI Product Builder & RAGSPRO Founder',
+  description: 'Raghav Shah, also known as Bhupender Pratap, is an AI product builder and founder of RAGSPRO. Building intelligent automation solutions, SaaS platforms, and AI-powered applications. Full-stack developer specializing in Next.js, React, Python, and AI integration.',
+  keywords: [
+    'Raghav Shah',
+    'Bhupender Pratap',
+    'RAGSPRO',
+    'AI Developer',
+    'Full-Stack Developer',
+    'Next.js Developer',
+    'React Developer',
+    'Python Developer',
+    'AI Automation',
+    'SaaS Developer',
+    'AI Product Builder',
+    'Automation Solutions',
+    'LawAI',
+    'RAGS AI',
+    'Lead Generation',
+    'AI Assistant',
+    'Voice AI',
+    'Machine Learning',
+    'Web Development',
+    'Mobile Development',
+    'iOS Development',
+    'Tech Entrepreneur',
+    'Startup Founder',
+  ],
+  authors: [{ name: 'Raghav Shah', url: 'https://raghav.ragspro.com' }],
   creator: 'Raghav Shah',
+  publisher: 'RAGSPRO',
+  robots: 'index, follow',
+  alternates: {
+    canonical: 'https://raghav.ragspro.com',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://raghav.ragspro.com',
-    title: 'Raghav Shah (Bhupender) - AI Product Builder',
-    description: 'Building intelligent AI products and automation solutions. Founder of RAGSPRO.',
+    title: 'Raghav Shah (Bhupender Pratap) - AI Product Builder & RAGSPRO Founder',
+    description: 'Building intelligent AI products, automation solutions, and SaaS platforms. Founder of RAGSPRO, LawAI, and RAGS AI.',
     siteName: 'Raghav Shah Portfolio',
     images: [{
-      url: '/images/og-image.png',
+      url: '/images/raghavimage.PNG',
       width: 1200,
       height: 630,
-      alt: 'Raghav Shah Portfolio'
+      alt: 'Raghav Shah - AI Product Builder'
     }]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Raghav Shah - AI Product Builder',
+    title: 'Raghav Shah - AI Product Builder & RAGSPRO Founder',
     description: 'Building intelligent AI products and automation solutions.',
-    images: ['/images/og-image.png'],
+    creator: '@raghavshahhh',
+    images: ['/images/raghavimage.PNG'],
   },
 }
 

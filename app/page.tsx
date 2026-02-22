@@ -14,7 +14,7 @@ import GitHubProjects from '@/components/GitHubProjects'
 const portfolioData = {
   profile: {
     name: 'Raghav Shah',
-    image: '/images/IMG_4245.jpg',
+    image: '/images/raghavimage.PNG',
     headline: 'I build intelligent AI products.',
   },
   socialLinks: {
